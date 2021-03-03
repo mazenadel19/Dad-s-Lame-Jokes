@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #eeeeee;
+	height: 100vh;
+	width: 100vw;
+	font-size: 18px;
+
+}
+
+.container-fluid {
+	width: 90%;
+	height: inherit;
+}
+
+header {
+	height: 20%;
+	font-family: 'Roboto Slab', serif;
+	text-decoration: underline;
+	text-decoration-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5em;
+}
+
+main {
+	height: 80%;
+}
+
+main>div{
+	/* height: inherit;   */ /*! will translate to 80% as it would inherit the same value from it's parent    */
+	height: 100%;
+
+}
+
+/* main > div> section{
+	display: flex;
+	flex:2
+} */
+
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+button {
+	font-family: 'Roboto Slab', serif;
+	padding: 5px 10px !important;
+	border-radius: 0.5em !important;
+	font-size: 0.9em !important;
+}
+
+section:first-of-type {
+	transition: all 1.5s;
+}
+
+section:nth-of-type(2) {
+	height: 30%;
+	font-size: 0.8em;
+}
+
+#jokeBox {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	width: 80%;
+	font-size: 1.2rem;
+}
+
+section:last-child {
+	height: 50%;
+}
+
+
+
+.responsive {
+	max-width: 100%;
+	max-height:100%;
+}
+
+
+
+@media (min-width: 992px) {
+
+	body>div>div{
+		align-items: center;
+	}
+
+    header{
+		font-size: 3.5em;
+		height: 100%;
+	}
+
+	header > div{
+		width: 50%;
+	}
+
+	.container-fluid {
+		width: 100%;
+		max-width: 1200px;
+	}
+
+	main {
+		height: 90%;
+	}
+
+    button {
+        padding: 8px 16px !important;
+        border-radius: 0.5em !important;
+        font-size: 1em !important;
+    }
+
+    section:nth-child(2) {
+        font-size: 1em;
+    }
+}
+
