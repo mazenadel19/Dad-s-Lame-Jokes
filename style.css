@@ -64,7 +64,7 @@ section:first-of-type {
 
 section:nth-of-type(2) {
 	height: 30%;
-	font-size: 0.8em;
+	font-size: 0.6em;
 }
 
 #jokeBox {
@@ -90,11 +90,21 @@ section:last-child {
 	button {
 		font-size: 0.8em !important;
 	}
+
+	section:nth-of-type(2) {
+		font-size: 0.8em;
+	}
 }
 
 @media (min-width: 768px) {
 	header {
 		font-size: 2.5rem;
+	}
+	button {
+		font-size: 0.8em !important;
+	}
+	section:nth-of-type(2) {
+		font-size: 0.8em;
 	}
 }
 
